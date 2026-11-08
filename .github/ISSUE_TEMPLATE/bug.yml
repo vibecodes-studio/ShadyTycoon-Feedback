@@ -1,0 +1,61 @@
+name: Bug report
+description: Something in the game is broken, looks wrong or is too slow.
+labels: ["bug", "new"]
+body:
+  - type: input
+    id: version
+    attributes:
+      label: Game version
+      description: Bottom left on the title screen.
+      placeholder: "0.1.210"
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Roads & traffic
+        - Buildings & lots
+        - Pedestrians
+        - Island & terrain
+        - Menus & HUD
+        - Multiplayer & network
+        - Performance
+        - Admin menu
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What did you see, and what did you expect instead?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: How to make it happen again
+      description: Steps, if you know them. The seed of the island helps too (shown in the lobby).
+      placeholder: |
+        1. New game, seed ...
+        2. Build a road from ... to ...
+        3. ...
+  - type: textarea
+    id: shots
+    attributes:
+      label: Screenshots / video
+      description: Drag images or videos into this box.
+  - type: dropdown
+    id: platform
+    attributes:
+      label: System
+      options:
+        - Windows
+        - Linux
+  - type: input
+    id: hardware
+    attributes:
+      label: Graphics card / FPS (optional)
+      placeholder: "RTX 3070, about 40 FPS"
