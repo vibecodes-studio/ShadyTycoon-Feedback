@@ -12,7 +12,7 @@ The game version is shown at the bottom left of the title screen (e.g. `0.1.210`
 
 ## Board
 
-All reports are on the project board, sorted by status:
+All reports are on the [project board](https://github.com/orgs/vibecodes-studio/projects/1), sorted by status:
 
 **New → Confirmed → In progress → Fixed (next update) → Done**
 
